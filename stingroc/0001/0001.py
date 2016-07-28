@@ -17,9 +17,9 @@ if __name__ == "__main__":
 
     def gen_ticket():
         single_ticket_lst = [char_lst[random.randint(0, len(char_lst) - 1)]
-                             for i in range(LENGTH_OF_TICKET)]
+        for i in range(LENGTH_OF_TICKET)]
 
-        return "".join(single_ticket_lst)
+            return "".join(single_ticket_lst)
 
     result = set()
     while len(result) <= NUM_OF_TICKET:
